@@ -1,32 +1,33 @@
-# CSCI262 - Assignment 1
+# Rainbow Table Generator
 
-**Name:** Akilesh Jayakumar  
-**UOW ID:** 7901240  
-**Submission Date:** 5 November 2023  
+## Overview
+This Java program generates a rainbow table for cryptographic hash functions using the MD5 algorithm. It reads a list of passwords from a file, hashes each, performs reduction steps, and stores the final hash and original password pair in a rainbow table. The program is designed to find pre-images of given hash values using this table.
 
-## Instructions for Compiling and Running the Rainbow.java Program:
+## Features
+- **Rainbow Table Generation**: Generates a rainbow table from a list of plaintext passwords.
+- **Find Pre-image**: Allows the user to enter a hash value and finds the possible original password.
+- **Interactive Console**: Users can interactively query for hash pre-images and choose to continue or exit the program.
 
-### Requirements:
-- **Java Development Kit (JDK):** Ensure that you have the JDK installed on your system.
-- **Files:** Make sure the provided Passwords.txt and the Java source files are in the same directory.
+## Installation
+To run this program, ensure you have Java installed on your system. Follow these steps to set up and execute the program:
+1. Clone this repository to your local machine.
+2. Navigate to the directory containing the program.
 
-### Compilation:
-1. Open your terminal or command prompt.
-2. Navigate to the directory containing the source files.
-3. Compile the Java source code using the following command:
+## Usage
+To compile and run the program, use the following commands in your terminal:
+```bash
+javac Rainbow.java
+java Rainbow
+```
 
+Follow the on-screen prompts to enter hash values and interact with the rainbow table. The program reads passwords from `Passwords.txt`, hashes them, and stores the results in `Rainbow.txt`.
 
-### Running the Program:
-1. Once the program is successfully compiled, execute it using the following command:
+## Contributing
+Contributions are welcome. If you have suggestions or improvements, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-2. Follow the on-screen prompts to input hash values or exit the program as desired.
-
-## Program Description:
-The `Rainbow.java` program implements a rainbow table for hashing and retrieving pre-images of hashed passwords. Here's how it works:
-
-- **Hash Generation:** Initially, the program reads a list of potential passwords from "Passwords.txt", hashes each password using MD5, and stores a chain of reduced values in a rainbow table.
-- **Hash Retrieval:** Upon request, the program attempts to find pre-images of provided hash values by either looking them up directly in the generated table or by applying reduction and hash operations to match a chain in the table.
-
-This program serves as a practical tool for cryptographic analysis and can be used to study various aspects of password security and hash functions.
-
+## Acknowledgments
+- Utilizes Java's built-in libraries for cryptographic functions.
+- Inspired by the need for efficient cryptographic hash breaking tools.
