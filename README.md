@@ -25,19 +25,22 @@ java Rainbow
 Follow the on-screen prompts to enter hash values and interact with the rainbow table. The program reads passwords from `Passwords.txt`, hashes them, and stores the results in `Rainbow.txt`.
 
 ## Contributing
+1. **Fork the Repository**
+2. **Create a Branch:**
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. **Commit Changes:**
+   ```bash
+   git commit -am 'Add new feature: description'
+   ```
+4. **Push to Branch:**
+   ```bash
+   git push origin feature-branch
+   ```
+5. **Submit a Pull Request**
 
-Your contributions are welcome! If you have ideas for improvements or new features:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Submit a pull request.
-
-## Contact Information
-
-For more information, please reach out to me at:
-
-- **Email**: jayakuma006@mymail.sim.edu.sg
-- **LinkedIn**: [Akilesh Jayakumar on LinkedIn](https://www.linkedin.com/in/akileshjayakumar/)
-- **GitHub**: [Akilesh Jayakumar on GitHub](https://github.com/akileshjayakumar)
+## Contact
+- **Email:** [jayakuma006@mymail.sim.edu.sg](mailto:jayakuma006@mymail.sim.edu.sg)
+- **LinkedIn:** [Akilesh Jayakumar on LinkedIn](https://www.linkedin.com/in/akileshjayakumar/)
+- **GitHub:** [Akilesh Jayakumar on GitHub](https://github.com/akileshjayakumar)
